@@ -95,6 +95,9 @@ Encore
                     match: ["templates/*.twig"],
                 },
                 {
+                    match: ["templates/*.html.twig"],
+                },
+                {
                     match: ["assets/*.js"],
                 },
                 {

@@ -2,13 +2,14 @@
 
 namespace App\Controller;
 
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
-class IndexController
+
+class IndexController extends AbstractController
 {
     public function display(): Response
     {
-        $msg = "What the hellllllllll";
-        $heihei = 91212;
-        return new Response('<html><body>' .$msg. '</body></html>'); 
+        return $this->render('base.html.twig', [
+        ]);
     }
 }
